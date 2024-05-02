@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <p id="text">madam</p>
+    <button onclick="palin()">press</button>
+    <p id="palin"></p>
+    <script>
+        function palin(){
+        var name=document.getElementById('text').value;
+        for(var i=0;i<name.length()-1;i++){
+            var rev=name.reverseString();
+            if(name==rev){
+                document.getElementById('palin').display=True;
+            }
+            else{
+                document.getElementById('palin').display=False;
+            }
+        }
+    }
+    </script>
+</body>
+</html>

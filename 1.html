@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+</head>
+<body>
+    <button id="array" onclick="add()">[1,2,3,4,5]</button>
+    <p id="show"></p>
+<script>
+        function add(){
+        var array=document.getElementById('array').value;
+        for(var i=0;i<array.length;i++){
+            var result=0;
+            result=result+array[i];
+        }
+        document.getElementById('show').innerHTML=result;
+        }
+</script>
+</body>
+</html>

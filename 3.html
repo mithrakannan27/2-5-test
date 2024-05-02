@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <p id="array-1">[1,2,3]</p>
+    <p id="array-2">[4,5]</p>
+    <button id="button" onclick="add()">Button</button>
+    <p id="concat"></p>
+<script>
+        function add(){
+        var a=document.getElementById('array-1').value.toArray();
+        
+        var b=document.getElementById('array-2').value.toArray();
+        
+        var c=eval(a+b);
+        document.getElementById('concat').innerHTML=c;
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <button id="array" onclick="show()">[1,2,3,4,5,5]</button>
+    <p id="unique"></p>
+    <script>
+function show(){
+        var array=document.getElementById('array').value;
+        for(var i=0;i<array.length;i++){
+            for(var j=i+1;j<array.length;j++){
+                if(i!=j){
+                    var a=array[i];
+                }
+            }
+        }
+        document.getElementById('unique').innerHTML=a;
+        }
+    </script>
+</body>
+</html>
